@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerGrpc2", "ServerGrpc2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClientGrpc", "WebClientGrpc\WebClientGrpc.csproj", "{0CEFE081-6E9A-446E-B1FE-1C4EE50E6BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedStandard", "SharedStandard\SharedStandard.csproj", "{4A8C0C14-ECE0-491F-A345-CE62BEDBE472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerGrpcNet5", "ServerGrpcNet5\ServerGrpcNet5.csproj", "{BBDE70C5-EC6D-4208-BFA0-25FE7C70ABA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{0CEFE081-6E9A-446E-B1FE-1C4EE50E6BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CEFE081-6E9A-446E-B1FE-1C4EE50E6BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CEFE081-6E9A-446E-B1FE-1C4EE50E6BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8C0C14-ECE0-491F-A345-CE62BEDBE472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8C0C14-ECE0-491F-A345-CE62BEDBE472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8C0C14-ECE0-491F-A345-CE62BEDBE472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8C0C14-ECE0-491F-A345-CE62BEDBE472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDE70C5-EC6D-4208-BFA0-25FE7C70ABA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDE70C5-EC6D-4208-BFA0-25FE7C70ABA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDE70C5-EC6D-4208-BFA0-25FE7C70ABA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDE70C5-EC6D-4208-BFA0-25FE7C70ABA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

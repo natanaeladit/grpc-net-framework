@@ -40,11 +40,28 @@ namespace WebClientGrpc.Controllers
             return View(model);
         }
 
-        public ActionResult Contact()
+        public async Task<ActionResult> Contact()
         {
             ViewBag.Message = "Your contact page.";
+            AboutViewModel model = new AboutViewModel();
 
-            return View();
+            var channel = new Channel("localhost", 10042, ChannelCredentials.Insecure);
+            try
+            {
+                var calculator = channel.CreateGrpcService<SharedStandard.ICalculator>();
+                var response = await calculator.MultiplyAsync(new SharedStandard.MultiplyRequest() { X = 2, Y = 4 });
+                if (response.Result != 8)
+                {
+                    throw new InvalidOperationException();
+                }
+                model.Result = response.Result;
+            }
+            finally
+            {
+                await channel.ShutdownAsync();
+            }
+
+            return View(model);
         }
     }
 }
