@@ -3,6 +3,8 @@ using GrpcGreeter;
 using ProtoBuf.Grpc.Server;
 using SharedStandard;
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace ServerGrpcNet5
 {
@@ -10,6 +12,12 @@ namespace ServerGrpcNet5
     {
         static void Main(string[] args)
         {
+            //var cacert = File.ReadAllText(@"ca.crt");
+            //var servercert = File.ReadAllText(@"server.crt");
+            //var serverkey = File.ReadAllText(@"server.key");
+            //var keypair = new KeyCertificatePair(servercert, serverkey);
+            //var sslCredentials = new SslServerCredentials(new List<KeyCertificatePair>() { keypair }, cacert, false);
+
             Server server = new Server
             {
                 Ports = { new ServerPort("localhost", 10042, ServerCredentials.Insecure) },
