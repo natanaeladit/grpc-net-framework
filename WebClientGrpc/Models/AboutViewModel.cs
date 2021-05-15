@@ -8,5 +8,6 @@ namespace WebClientGrpc
     public class AboutViewModel
     {
         public int Result { get; set; }
+        public string Message { get; set; }
     }
 }

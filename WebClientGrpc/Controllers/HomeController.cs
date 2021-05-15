@@ -1,9 +1,12 @@
 ﻿using Grpc.Core;
+using Grpc.Net.Client;
+using GrpcGreeter;
 using ProtoBuf.Grpc.Client;
 using Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -32,6 +35,8 @@ namespace WebClientGrpc.Controllers
                     throw new InvalidOperationException();
                 }
                 model.Result = response.Result;
+
+                //model.Message = greeterResponse.Message;
             }
             finally
             {
